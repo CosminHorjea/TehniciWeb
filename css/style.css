@@ -5,6 +5,7 @@
 	--text-priamry: #fff;
 	--bg-primary: #0f2133;
 	--bg-button: #366799;
+	--bg-hover: #4c8ecf;
 }
 
 body {
@@ -119,4 +120,21 @@ footer {
 
 .back_to_top {
 	text-transform: capitalize;
+}
+
+@media only screen and (max-width: 760px) {
+	header {
+		display: block;
+		text-align: center;
+	}
+
+	header>h1 {
+		margin: 0;
+		padding-left: 1em;
+	}
+
+	footer {
+		display: block;
+		text-align: center;
+	}
 }

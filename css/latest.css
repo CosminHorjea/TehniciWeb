@@ -56,3 +56,37 @@ article>iframe {
 .rate_medium {
 	color: yellow
 }
+
+.rate_bad {
+	color: red;
+}
+
+@media only screen and (max-width: 760px) {
+
+	/* Pentru ecranele mici */
+	main {
+		padding-left: 1em;
+	}
+
+	main>section {
+		grid-template-columns: auto;
+	}
+
+	section>article {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(4, auto);
+	}
+
+	section>article>img {
+		width: 100%;
+	}
+
+	article>iframe {
+		height: 285px;
+	}
+
+	article .details {
+		grid-column: auto;
+		grid-row: auto
+	}
+}
