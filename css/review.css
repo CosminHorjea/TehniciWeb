@@ -1,4 +1,4 @@
-section>article:first-child {
+section>article:nth-child(2) {
 	display: grid;
 	grid-template-columns: 300px auto;
 }
@@ -11,6 +11,10 @@ section>article:first-child>img {
 
 }
 
+section:first-child>h2 {
+	display: none;
+}
+
 .desc {
 	display: flex;
 	position: relative;
@@ -18,7 +22,7 @@ section>article:first-child>img {
 	/* align-items: center; */
 }
 
-.desc>h2 {
+.desc>h3 {
 	text-decoration: underline;
 }
 
@@ -39,6 +43,10 @@ section>ul {
 	padding: 0
 }
 
+section:nth-child(2)>article>h3 {
+	display: none;
+}
+
 #comment_area {
 	width: 90%;
 	border-radius: 10px;
@@ -46,7 +54,8 @@ section>ul {
 }
 
 #comment_area~button {
-	background-color: var(--bg-button);
+	/* background-color: var(--bg-button); */
+	background-color: #366799;
 	border: none;
 	padding: 0.6em;
 	margin: 0.6em;
@@ -56,8 +65,10 @@ section>ul {
 }
 
 .text_area_comment>textarea {
-	background-color: var(--bg-primary);
-	color: var(--text-primary)
+	/* background-color: var(--bg-primary); */
+	background-color: hsl(210, 55%, 13%);
+	/* color: var(--text-primary) */
+	color: #fff;
 }
 
 .comments img {
@@ -72,13 +83,14 @@ section>ul {
 @media only screen and (max-width: 768px) {
 
 	/* Pentru ecranele mici */
-	section>article:first-child {
+	section>article:nth-child(2) {
 		grid-template-columns: auto;
 	}
 
-	section>article:first-child>img {
+	section>article:nth-child(2)>img {
 		position: relative;
 		margin-bottom: 2em;
+		justify-self: center;
 	}
 
 	.desc>b {

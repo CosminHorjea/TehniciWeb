@@ -1,4 +1,4 @@
-main>section>h1 {
+main>section>h2 {
 	font-size: 3em;
 	text-decoration: underline;
 }
@@ -30,10 +30,12 @@ form label {
 
 form input,
 form textarea {
-	background-color: var(--bg-primary);
+	/* background-color: var(--bg-primary); */
+	background-color: #0f2133;
 	border: 0;
 	padding: 1em;
-	color: var(--text-primary);
+	/* color: var(--text-primary); */
+	color: #abb7c4;
 	border-radius: 10px;
 	transition: all ease-out 0.4s;
 	font-size: 1.2em;
@@ -47,7 +49,8 @@ form textarea {
 form>button {
 	padding: 1em;
 	border: none;
-	background-color: var(--bg-button);
+	/* background-color: var(--bg-button); */
+	background-color: #366799;
 	color: white;
 	margin-top: 1em;
 	border-radius: 10px;
@@ -58,7 +61,8 @@ form>button {
 }
 
 form>button:hover {
-	background-color: var(--bg-hover);
+	/* background-color: var(--bg-hover); */
+	background-color: #366799;
 }
 
 @media only screen and (max-width: 760px) {

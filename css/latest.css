@@ -2,25 +2,29 @@ iframe {
 	border: 0;
 }
 
+section>h2 {
+	display: none;
+}
+
 section {
 	display: grid;
 	grid-template-columns: auto auto;
 	column-gap: 0.8em;
 }
 
-section > article {
+section>article {
 	display: grid;
 	grid-template-columns: 200px auto;
 	grid-template-rows: repeat(2, 285px);
 	column-gap: 10px;
 }
 
-article > .details {
+article>.details {
 	grid-column: 1 / span 2;
 	grid-row: 2 / span 1;
 }
 
-article > iframe {
+article>iframe {
 	width: 100%;
 	height: 100%;
 }
@@ -30,11 +34,11 @@ article > iframe {
 	padding: 1em;
 }
 
-.details > h2 {
+.details>h2 {
 	display: inline;
 }
 
-.details > b {
+.details>b {
 	position: absolute;
 	right: 0px;
 	font-weight: bold;
@@ -42,7 +46,8 @@ article > iframe {
 }
 
 .read_more {
-	background-color: var(--bg-button);
+	/* background-color: var(--bg-button); */
+	background-color: #366799;
 	padding: 0.6em;
 	border-radius: 10px;
 	transition: all ease-out 0.2s;
@@ -63,45 +68,51 @@ article > iframe {
 .rate_bad {
 	color: red;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	section > article {
+	section>article {
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: repeat(3, 285px);
 	}
-	article > img {
+
+	article>img {
 		justify-self: center;
 	}
-	article > .details {
+
+	article>.details {
 		grid-column: auto;
 		grid-row: auto;
 	}
 }
 
 @media only screen and (max-width: 768px) {
+
 	/* Pentru ecranele mici */
 	main {
 		padding-left: 1em;
 	}
 
-	main > section {
+	main>section {
 		grid-template-columns: auto;
 		row-gap: 1em;
 	}
 
-	section > article {
+	section>article {
 		grid-template-columns: auto;
 		grid-template-rows: repeat(4, auto);
 		row-gap: 1em;
 	}
 
-	section > article > img {
+	section>article>img {
 		width: 50%;
 	}
-	article > img {
+
+	article>img {
 		justify-self: center;
 	}
-	article > iframe {
+
+	article>iframe {
 		height: 285px;
 	}
 

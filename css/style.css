@@ -3,7 +3,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 	--text-priamry-nav: #abb7c4;
 	--text-priamry: #fff;
-	--bg-primary: #0f2133;
+	--bg-primary: hsl(210, 55%, 13%);
 	--bg-button: #366799;
 	--bg-hover: #4c8ecf;
 }
@@ -136,9 +136,11 @@ footer {
 	header ul {
 		padding: 0;
 	}
-	main{
+
+	main {
 		padding-left: 1em;
 	}
+
 	footer {
 		display: block;
 		text-align: center;
