@@ -1,19 +1,21 @@
 :root {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
-	--text-priamry-nav: #abb7c4;
+	/* --text-priamry-nav: #abb7c4;
 	--text-priamry: #fff;
 	--bg-primary: hsl(210, 55%, 13%);
 	--bg-button: #366799;
-	--bg-hover: #4c8ecf;
+	--bg-hover: #4c8ecf; */
 }
 
 body {
-	color: var(--text-priamry);
+	/* color: var(--text-priamry); */
+	color: #FFF;
 	background-color: white;
 	margin: 0;
 	padding: 0;
-	background-color: var(--bg-primary);
+	/* background-color: var(--bg-primary); */
+	background-color: hsl(210, 55%, 13%);
 }
 
 body::-webkit-scrollbar {
@@ -21,15 +23,18 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-	background: var(--bg-primary);
+	/* background: var(--bg-primary); */
+	background: hsl(210, 55%, 13%);
 }
 
 body::-webkit-scrollbar-thumb {
-	background: var(--text-priamry-nav);
+	/* background: var(--text-priamry-nav); */
+	background: #abb7c4;
 }
 
 a {
-	color: var(--text-priamry);
+	/* color: var(--text-priamry); */
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -51,8 +56,10 @@ main {
 header {
 	display: inline-flex;
 	/* padding-left: 6rem; */
-	color: var(--text-priamry-nav);
-	background-color: var(--bg-primary);
+	/* color: var(--text-priamry-nav); */
+	color: #abb7c4;
+	/* background-color: var(--bg-primary); */
+	background-color: hsl(210, 55%, 13%);
 	width: 100%;
 }
 
@@ -71,7 +78,8 @@ header>h1 {
 li a,
 .dropdown-btn {
 	display: inline-block;
-	color: var(--text-priamry);
+	/* color: var(--text-priamry); */
+	color: #fff;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -88,7 +96,8 @@ li.dropdown>ul {
 .dropdown-items {
 	display: none;
 	position: absolute;
-	background-color: var(--bg-primary);
+	/* background-color: var(--bg-primary); */
+	background-color: hsl(210, 55%, 13%);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
