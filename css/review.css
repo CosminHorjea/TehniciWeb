@@ -68,3 +68,27 @@ section>ul {
 	margin-left: 1em;
 	width: 90%;
 }
+
+@media only screen and (max-width: 768px) {
+
+	/* Pentru ecranele mici */
+	section>article:first-child {
+		grid-template-columns: auto;
+	}
+
+	section>article:first-child>img {
+		position: relative;
+		margin-bottom: 2em;
+	}
+
+	.desc>b {
+		position: absolute;
+		right: 0;
+		margin-top: 0.83em;
+		transform: translateY(-50%);
+		font-weight: bolder;
+		font-size: 2em;
+		/* float: right */
+	}
+
+}

@@ -130,9 +130,15 @@ footer {
 
 	header>h1 {
 		margin: 0;
-		padding-left: 1em;
+		padding-left: 0;
 	}
 
+	header ul {
+		padding: 0;
+	}
+	main{
+		padding-left: 1em;
+	}
 	footer {
 		display: block;
 		text-align: center;

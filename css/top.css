@@ -29,6 +29,10 @@ td:nth-child(3) {
 		display: block;
 	}
 
+	td:first-child {
+		text-align: center;
+	}
+
 	thead {
 		display: none;
 	}

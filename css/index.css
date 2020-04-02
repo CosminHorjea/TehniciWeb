@@ -115,7 +115,17 @@ article .details {
 	font-weight: bold;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.review_list {
+		grid-template-columns: auto;
+	}
+
+	details>span {
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 768px) {
 	main {
 		padding-left: 1em;
 	}
@@ -129,8 +139,14 @@ article .details {
 		display: block;
 	}
 
+	article {
+		padding: 1em 1em;
+	}
+
 	article img {
 		width: 100%;
+		margin: 0 auto;
+
 	}
 
 	article .details {
