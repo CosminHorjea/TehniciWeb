@@ -1,0 +1,38 @@
+table {
+	margin: 0px;
+	width: 100%;
+}
+
+td {
+	/* width: 25%; */
+}
+
+td:nth-child(2) {
+	width: 5%;
+	text-align: center
+}
+
+td:nth-child(3) {
+	padding-right: 10%;
+}
+
+@media only screen and (max-width: 760px) {
+
+	/* Pentru ecranele mici */
+	table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
+	}
+
+	td:first-child {
+		text-align: center;
+	}
+
+	thead {
+		display: none;
+	}
+}

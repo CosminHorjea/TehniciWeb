@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Review-uri de filme</title>
+		<meta name="keywords" content="file,recenzii,ultimele filme" />
+		<meta name="author" content="Horjea Cosmin" />
+		<meta
+			name="description"
+			content="Site cu review-uri personale adresate ultimelor filme aparute"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+	</head>
+
+	<body>
+		<%- include("../fragmente/header") %>
+
+		<main style="color: white; z-index: 12;">
+			<section style="text-align: center;">
+				<h2>Contact</h2>
+				<form action="/inreg" method="POST">
+					<div class="nume">
+						<label for="input_nume">Nume</label>
+						<br />
+						<input type="text" name="nume" id="input_nume" />
+					</div>
+					<div class="username">
+						<label for="input_username">Username</label>
+						<br />
+						<input type="text" name="username" id="input_username" />
+					</div>
+					<!-- <br> -->
+					<div class="email">
+						<label for="input_email">Email</label>
+						<br />
+						<input name="email" id="input_email" />
+					</div>
+					<div class="password">
+						<label for="input_parola">Parola</label>
+						<br />
+						<input name="password" id="input_parola" />
+					</div>
+					<div class="movies">
+						<label for="input_movies">Filme preferate</label>
+						<br />
+						<input name="text" id="input_movies" />
+					</div>
+					<button>Inregistrare</button>
+				</form>
+			</section>
+		</main>
+		<%- include("../fragmente/footer") %>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

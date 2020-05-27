@@ -1,0 +1,106 @@
+section>article:nth-child(2) {
+	display: grid;
+	grid-template-columns: 300px auto;
+}
+
+section>article:first-child>img {
+	justify-self: center;
+	position: sticky;
+	top: 1em;
+	box-shadow: 0px 2px 12px 2px white;
+
+}
+
+section:first-child>h2 {
+	display: none;
+}
+
+.desc {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	/* align-items: center; */
+}
+
+.desc>h3 {
+	text-decoration: underline;
+}
+
+.desc>b {
+	position: absolute;
+	right: 2em;
+	font-weight: bolder;
+	font-size: 2em;
+	/* float: right */
+}
+
+.text>img {
+	text-align: center;
+	width: 80%;
+}
+
+section>ul {
+	padding: 0
+}
+
+section:nth-child(2)>article>h3 {
+	display: none;
+}
+
+#comment_area {
+	width: 90%;
+	border-radius: 10px;
+	border: none
+}
+
+#comment_area~button {
+	/* background-color: var(--bg-button); */
+	background-color: #366799;
+	border: none;
+	padding: 0.6em;
+	margin: 0.6em;
+	color: white;
+	cursor: pointer;
+
+}
+
+.text_area_comment>textarea {
+	/* background-color: var(--bg-primary); */
+	background-color: hsl(210, 55%, 13%);
+	/* color: var(--text-primary) */
+	color: #fff;
+}
+
+.comments img {
+	fill: white
+}
+
+.comments article p {
+	margin-left: 1em;
+	width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+
+	/* Pentru ecranele mici */
+	section>article:nth-child(2) {
+		grid-template-columns: auto;
+	}
+
+	section>article:nth-child(2)>img {
+		position: relative;
+		margin-bottom: 2em;
+		justify-self: center;
+	}
+
+	.desc>b {
+		position: absolute;
+		right: 0;
+		margin-top: 0.83em;
+		transform: translateY(-50%);
+		font-weight: bolder;
+		font-size: 2em;
+		/* float: right */
+	}
+
+}
