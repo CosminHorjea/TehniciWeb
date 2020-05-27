@@ -3,7 +3,7 @@ section>article:nth-child(2) {
 	grid-template-columns: 300px auto;
 }
 
-section>article:first-child>img {
+section>article:nth-child(2)>img {
 	justify-self: center;
 	position: sticky;
 	top: 1em;
