@@ -30,7 +30,6 @@ app.get("/contact", function (req, res) {
   res.render("html/contact");
 });
 
-//TODO celelalte pagini
 app.get("/latest", function (req, res) {
   res.render("html/latest");
 });
