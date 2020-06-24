@@ -11,6 +11,11 @@
 			</li>
 			<li><a href="review">Review-uri</a></li>
 			<li><a href="contact">Contact</a></li>
+			<% if (!locals.username){ if(locals.error) { %>
+			<script>
+				alert("Incorrect id/password");
+			</script>
+			<%} %>
 			<li>
 				<form action="/login" method="POST">
 					<input
@@ -30,6 +35,11 @@
 					<input type="submit" value="Log In" />
 				</form>
 			</li>
+			<% } else {%>
+			<span>Hello <%= username %></span
+			><a href="/logout">Sign Out</a>
+
+			<% } %>
 		</ul>
 	</nav>
 </header>

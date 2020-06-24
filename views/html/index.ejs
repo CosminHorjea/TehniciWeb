@@ -12,6 +12,7 @@
 		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/indexPage.js"></script>
 	</head>
 
 	<body>
@@ -20,52 +21,7 @@
 		<main>
 			<section>
 				<h2>Carusel cu posterele filmelor</h2>
-				<div class="slider">
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg"
-						alt="Ad Astra(2019) Movie Poster"
-						title="Ad Astra (2019)"
-					/>
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
-						alt="Parasite(2019) Movie Poster"
-						title="Parasite (2019)"
-					/>
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
-						alt="Joker(2019) Movie Poster"
-						title="Joker (2019)"
-					/>
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg"
-						alt="Ad Astra(2019) Movie Poster"
-						title="Ad Astra (2019)"
-					/>
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
-						alt="Parasite(2019) Movie Poster"
-						title="Parasite (2019)"
-					/>
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
-						alt="Joker(2019) Movie Poster"
-						title="Joker (2019)"
-					/>
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg"
-						alt="Ad Astra(2019) Movie Poster"
-						title="Ad Astra (2019)"
-					/>
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
-						alt="Parasite(2019) Movie Poster"
-						title="Parasite (2019)"
-					/>
-					<img
-						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
-						alt="Joker(2019) Movie Poster"
-						title="Joker (2019)"
-					/>
+				<div class="slider" id="slider_postere">
 					<img
 						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg"
 						alt="Ad Astra(2019) Movie Poster"
@@ -86,7 +42,7 @@
 			<hr />
 			<section>
 				<h2>Ultimele Review-uri</h2>
-				<ul class="review_list">
+				<ul class="review_list" id="review_list">
 					<li>
 						<article>
 							<img
@@ -132,102 +88,6 @@
 									<br />
 								</p>
 								<span>Nota: 8.7/10</span>
-							</div>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img
-								src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/pThyQovXQrw2m0s9x82twj48Jq4.jpg"
-								alt="Knives Out (2019) Movie Poster"
-								title="Knives Out (2019)"
-							/>
-							<div class="details">
-								<h3>La Cutite</h3>
-								<p>
-									When renowned crime novelist Harlan Thrombey is found dead at
-									his estate just after his 85th birthday, the inquisitive and
-									debonair Detective Benoit Blanc is mysteriously enlisted to
-									investigate. From Harlan's dysfunctional…
-									<br />
-									<a href="review.html" class="read_full"
-										>Citeste tot review-ul</a
-									>
-									<br />
-								</p>
-								<span>Nota: 8.7/10</span>
-							</div>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img
-								src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg"
-								alt="Bad Boys For Life Movie Poster"
-								title="Bad Boys for Life (2020)"
-							/>
-							<div class="details">
-								<h3>Baieti Rai pe Viata</h3>
-								<p>
-									Marcus and Mike are forced to confront new threats, career
-									changes, and midlife crises as they join the newly created
-									elite team AMMO of the Miami police department to take down
-									the ruthless Armando Armas, the vicious…
-									<br />
-									<a href="review.html" class="read_full"
-										>Citeste tot review-ul</a
-									>
-									<br />
-								</p>
-								<span>Nota: 8.7/10</span>
-							</div>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img
-								src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg"
-								alt="Avengers:Infinity War (2018) Movie Poster"
-								title="Avengers:Infinity War (2018)"
-							/>
-							<div class="details">
-								<h3>Razbunatorii: Razboiul Infinitului</h3>
-								<p>
-									As the Avengers and their allies have continued to protect the
-									world from threats too large for any one hero to handle, a new
-									danger has emerged from the cosmic shadows: Thanos. A despot
-									of intergalactic infamy…
-									<br />
-									<a href="review.html" class="read_full"
-										>Citeste tot review-ul</a
-									>
-									<br />
-								</p>
-								<span>Nota: 8.7/10</span>
-							</div>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img
-								src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/pThyQovXQrw2m0s9x82twj48Jq4.jpg"
-								alt="Knives Out (2019) Movie Poster"
-								title="Knives Out (2019)"
-							/>
-							<div class="details">
-								<h3>La Cutite</h3>
-								<p>
-									When renowned crime novelist Harlan Thrombey is found dead at
-									his estate just after his 85th birthday, the inquisitive and
-									debonair Detective Benoit Blanc is mysteriously enlisted to
-									investigate. From Harlan's dysfunctional…
-									<br />
-									<a href="review.html" class="read_full"
-										>Citeste tot review-ul</a
-									>
-									<br />
-								</p>
-								<span>Nota:8.7/10</span>
 							</div>
 						</article>
 					</li>

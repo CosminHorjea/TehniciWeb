@@ -1,5 +1,5 @@
 {
-	"lastId": 2,
+	"lastId": 4,
 	"useri": [
 		{
 			"id": 0,
@@ -19,6 +19,26 @@
 			"filme_pref": "saczxc",
 			"email": "dsad",
 			"dataInreg": "2020-06-24T11:40:33.256Z",
+			"rol": "user"
+		},
+		{
+			"id": 2,
+			"username": "Corolo",
+			"nume": "asdasn",
+			"parola": {},
+			"filme_pref": "500 days of summer",
+			"email": "dnsadon",
+			"dataInreg": "2020-06-24T23:20:40.029Z",
+			"rol": "user"
+		},
+		{
+			"id": 3,
+			"username": "Corolo",
+			"nume": "Corolo",
+			"parola": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+			"filme_pref": "Ana are mere",
+			"email": "dasmnodna",
+			"dataInreg": "2020-06-24T23:34:25.218Z",
 			"rol": "user"
 		}
 	]

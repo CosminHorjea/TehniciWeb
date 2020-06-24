@@ -1,4 +1,1 @@
-// window.alert("test");
-// document.body.onload = () => {
-//     window.alert("Heyp");
-// }
+console.log("from script.js");

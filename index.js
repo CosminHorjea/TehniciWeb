@@ -16,16 +16,20 @@ app.use(
 	session({ secret: "cheie_sesiune", resave: true, saveUninitialized: false })
 );
 app.use(bodyParser.json());
-
+app.get("/logout", (req, res) => {
+	req.session.destroy();
+	res.redirect("/");
+});
 app.get("/filme", (req, res) => {
 	let filme = fs.readFileSync("filme.json");
-	// ??res.setHeader("Content-Type", "application/json");
-	res.json(filme);
+	// res.setHeader("Content-Type", "application/json");
+	res.send(JSON.parse(filme));
 });
-
+app.get("/favicon.ico", function (req, res) {});
 app.get("/*", (req, res) => {
 	console.log(req.url);
-	res.render(`html/${req.url}`, (err, text) => {
+	let user = getUsername(req);
+	res.render(`html/${req.url}`, { username: user }, (err, text) => {
 		if (err)
 			if (err.message.includes("Failed to lookup view"))
 				return res.status(404).render("html/404");
@@ -38,8 +42,7 @@ app.post("/inreg", (req, res) => {
 	let formData = new formidable.IncomingForm();
 	formData.parse(req, (err, fields, files) => {
 		let users = fs.readFileSync("useri.json");
-		const hashing = crypto.createHash("sha256");
-		let hashedPassword = hashing.update(fields.password);
+		let hashedPassword = sha256(fields.password);
 		let useri = JSON.parse(users);
 		let new_user = {
 			id: useri.lastId,
@@ -61,15 +64,15 @@ app.post("/login", function (req, res) {
 	let formData = formidable.IncomingForm();
 	formData.parse(req, (err, fields, files) => {
 		usersFile = fs.readFileSync("useri.json");
-		const hashing = crypto.createHash("sha256");
-		let crypted = hashing.update(fields.password);
+		let crypted = sha256(fields.parola);
 		usersObject = JSON.parse(usersFile);
 		let utilizator = usersObject.useri.find((e) => {
 			return e.username == fields.username && crypted == e.parola;
 		});
 		if (utilizator) {
 			req.session.utilizator = utilizator;
-			res.render("html/index", { user: utilizator });
+			// res.render("html/index", { user: utilizator });
+			res.redirect("/");
 		} else {
 			res.render("html/index", { error: "Username or password incorect" });
 		}
@@ -78,3 +81,14 @@ app.post("/login", function (req, res) {
 
 app.listen(8080);
 console.log("Aplicatia se va deschide pe portul 8080.");
+
+// ---misc
+function getUsername(req) {
+	return req.session
+		? req.session.utilizator
+			? req.session.utilizator.username
+			: null
+		: null;
+}
+const sha256 = (toHash) =>
+	crypto.createHash("sha256").update(toHash, "utf8").digest("hex");
