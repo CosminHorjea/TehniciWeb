@@ -1,6 +1,9 @@
-var express = require("express"); /*include modulul express
-memorand in variabila express obiectul asociat modulului(exportat de modul)*/
-
+var express = require("express");
+let crypto = require("crypto");
+let session = require("express-session");
+let fs = require("fs");
+let bodyParser = require("body-parser");
+let formidable = require("formidable");
 var path = require("path");
 var app = express(); //aici avem serverul
 
@@ -9,46 +12,68 @@ app.set("view engine", "ejs");
 
 console.log(__dirname); //calea catre radacina proiectului
 app.use(express.static(path.join(__dirname, "resurse")));
-//din acest moment toate caile catre fisierele statice le scriem relativ la folderul resurse
+app.use(
+	session({ secret: "cheie_sesiune", resave: true, saveUninitialized: false })
+);
+app.use(bodyParser.json());
 
-// cand se face o cerere get catre pagina de index
-app.get("/", function (req, res) {
-  /*afiseaza(render) pagina folosind ejs (deoarece este setat ca view engine) */
-  res.render("html/index");
-});
-
-// app.get('/ceva', function(req, res) {
-// 	/*afiseaza(render) pagina folosind ejs (deoarece este setat ca view engine) */
-//     console.log("a intrat pe request")
-// 		res.setHeader("Content-Type", "text/html");
-// 		res.write("<html><body><p>Salut!!!!</p>");
-// 		//if(cond)
-// 		res.write("</body></html>");
-// 		res.end();
-// });
-app.get("/contact", function (req, res) {
-  res.render("html/contact");
+app.get("/filme", (req, res) => {
+	let filme = fs.readFileSync("filme.json");
+	// ??res.setHeader("Content-Type", "application/json");
+	res.json(filme);
 });
 
-app.get("/latest", function (req, res) {
-  res.render("html/latest");
-});
-app.get("/review", function (req, res) {
-  res.render("html/review");
-});
-app.get("/top", function (req, res) {
-  res.render("html/top");
+app.get("/*", (req, res) => {
+	console.log(req.url);
+	res.render(`html/${req.url}`, (err, text) => {
+		if (err)
+			if (err.message.includes("Failed to lookup view"))
+				return res.status(404).render("html/404");
+			else throw err;
+		res.send(text);
+	});
 });
 
-app.get("/inreg", function (req, res) {
-  res.render("html/inregistrare");
-});
-app.post("/inreg", function (req, res) {
+app.post("/inreg", (req, res) => {
+	let formData = new formidable.IncomingForm();
+	formData.parse(req, (err, fields, files) => {
+		let users = fs.readFileSync("useri.json");
+		const hashing = crypto.createHash("sha256");
+		let hashedPassword = hashing.update(fields.password);
+		let useri = JSON.parse(users);
+		let new_user = {
+			id: useri.lastId,
+			username: fields.username,
+			nume: fields.nume,
+			parola: hashedPassword,
+			filme_pref: fields.favorite_movies,
+			email: fields.email,
+			dataInreg: new Date(),
+			rol: "user",
+		};
+		useri.useri.push(new_user);
+		useri.lastId++;
+		fs.writeFileSync("useri.json", JSON.stringify(useri));
+	});
+	res.redirect("/");
 });
 app.post("/login", function (req, res) {
-});
-app.use(function (req, res) {
-  res.status(404).render("html/404");
+	let formData = formidable.IncomingForm();
+	formData.parse(req, (err, fields, files) => {
+		usersFile = fs.readFileSync("useri.json");
+		const hashing = crypto.createHash("sha256");
+		let crypted = hashing.update(fields.password);
+		usersObject = JSON.parse(usersFile);
+		let utilizator = usersObject.useri.find((e) => {
+			return e.username == fields.username && crypted == e.parola;
+		});
+		if (utilizator) {
+			req.session.utilizator = utilizator;
+			res.render("html/index", { user: utilizator });
+		} else {
+			res.render("html/index", { error: "Username or password incorect" });
+		}
+	});
 });
 
 app.listen(8080);
