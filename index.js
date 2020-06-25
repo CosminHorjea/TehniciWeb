@@ -25,6 +25,15 @@ app.get("/filme", (req, res) => {
 	// res.setHeader("Content-Type", "application/json");
 	res.send(JSON.parse(filme));
 });
+app.get("/filme/:id", (req, res) => {
+	console.log(req.params);
+	let filme = fs.readFileSync("filme.json");
+	filme = JSON.parse(filme).filme;
+	filme = filme.filter((f) => {
+		return f.id == req.params.id;
+	});
+	res.send(filme);
+});
 app.get("/favicon.ico", function (req, res) {});
 app.get("/*", (req, res) => {
 	console.log(req.url);

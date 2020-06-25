@@ -36,9 +36,10 @@
 				</form>
 			</li>
 			<% } else {%>
-			<span>Hello <%= username %></span
-			><a href="/logout">Sign Out</a>
-
+			<li class="logged">
+				<span>Hello <%= username %></span>
+				<a href="/logout">Sign Out</a>
+			</li>
 			<% } %>
 		</ul>
 	</nav>
