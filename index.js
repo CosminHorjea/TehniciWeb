@@ -64,6 +64,7 @@ app.post("/inreg", (req, res) => {
 			parola: hashedPassword,
 			filme_pref: fields.favorite_movies,
 			email: fields.email,
+			favoriteGenre:fields.genuri_filme,
 			dataInreg: new Date(),
 			rol: "user",
 		};

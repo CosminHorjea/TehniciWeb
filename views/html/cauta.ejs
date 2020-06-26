@@ -20,7 +20,7 @@
 		<%- include("../fragmente/header") %>
 
 		<main>
-			<form action="">
+			<form class="searchZone" id="search">
 				<input
 					type="searchTitle"
 					name="search_title"
@@ -31,13 +31,17 @@
 				<label for="isPGcheck"> Este PG rated</label>
 				<select id="an_aparitie">
 					<option value="all">Toti anii</option>
+					<option value="2001">2001</option>
 					<option value="2011">2011</option>
+					<option value="2018">2018</option>
 					<option value="2019">2019</option>
+					<option value="2020">2020</option>
 				</select>
 				<select id="sort_note">
 					<option value="asc">Note Crescator</option>
 					<option value="desc">Note Descrescator</option>
 				</select>
+				<button id="btn_reset">Reseteaza filtre</button>
 			</form>
 			<h2>Media noteleor filmelor selectate: <span id="avgRating"></span></h2>
 			<section id="movie_cards">

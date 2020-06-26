@@ -1,5 +1,9 @@
+.searchZone{
+	text-align: center;
+}
 #movie_cards {
 	display: flex;
+	flex-wrap: wrap;
 }
 .card {
 	width: 185px;

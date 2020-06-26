@@ -28,6 +28,15 @@ window.onload = async function () {
 	typeOfSort.onchange = (e) => {
 		applyFilters();
 	};
+	document.getElementById('search').onsubmit = (e)=>{
+		searchBox.value = "";
+		checkPG.checked = false;
+		yearValue.value = "all";
+		typeOfSort = "asc";
+		applyFilters();
+		e.preventDefault()
+		console.log('hut')
+	}
 	checkForLocalStorage();
 	renderData(filmData);
 	applyFilters();
@@ -114,5 +123,5 @@ function resetFilters() {
 	typeOfSort = "asc";
 	applyFilters();
 	clearInterval(timeOutID);
-	alert("Nu ati mai efectuat o cautare de doua minite, filtrele s-au resetat");
+	alert("Nu ati mai efectuat o cautare de doua minite, filtrele s-au resetat")
 }
