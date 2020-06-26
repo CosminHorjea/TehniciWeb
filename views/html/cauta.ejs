@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Review-uri de filme</title>
+		<meta name="keywords" content="file,recenzii,ultimele filme" />
+		<meta name="author" content="Horjea Cosmin" />
+		<meta
+			name="description"
+			content="Site cu review-uri personale adresate ultimelor filme aparute"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/cauta.css" />
+		<script src="js/ejs.min.js"></script>
+		<script src="js/cauta.js"></script>
+	</head>
+
+	<body>
+		<%- include("../fragmente/header") %>
+
+		<main>
+			<form action="">
+				<input
+					type="searchTitle"
+					name="search_title"
+					id="searchInput"
+					placeholder="Scrie un titlu de film"
+				/>
+				<input type="checkbox" name="isPGrated" id="isPGcheck" />
+				<label for="isPGcheck"> Este PG rated</label>
+				<select id="an_aparitie">
+					<option value="all">Toti anii</option>
+					<option value="2011">2011</option>
+					<option value="2019">2019</option>
+				</select>
+				<select id="sort_note">
+					<option value="asc">Note Crescator</option>
+					<option value="desc">Note Descrescator</option>
+				</select>
+			</form>
+			<section id="movie_cards">
+				<br />
+				<div class="card">
+					<img
+						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+						alt=""
+					/>
+					<div>
+						<h2>Parasite</h2>
+						<h3>9.7</h3>
+					</div>
+				</div>
+			</section>
+		</main>
+		<%- include("../fragmente/footer") %>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

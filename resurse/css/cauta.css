@@ -1,0 +1,14 @@
+#movie_cards {
+	display: flex;
+}
+.card {
+	width: 185px;
+	padding: 1em 1em;
+}
+.card > div {
+	display: flex;
+	justify-content: space-between;
+}
+.card > div > h3 {
+	line-height: 1.7em;
+}
