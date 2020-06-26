@@ -22,7 +22,7 @@ window.onload = async function () {
 		let textTemplate = ejs.render(
 			"<tr>\
 				<td>\
-					<img src=' <%= film.poster %> '>\
+					<a href='/review/<%= film.id %>'><img src='<%= film.poster %>'></a>\
 				</td><td><h2>" +
 				(i + 1) +
 				"</h2></td><td><p><%= film.desc%><p></td><td><%=film.nota%>/10</td></tr>",

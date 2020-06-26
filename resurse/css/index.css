@@ -13,7 +13,7 @@
 	padding-bottom: 1.2em;
 }
 
-.slider>img {
+.slider>a {
 	width: auto;
 	flex-shrink: 0;
 	height: 100%;
@@ -23,7 +23,7 @@
 	border-radius: 10px;
 }
 
-.slider>img:hover {
+.slider>a:hover {
 	transform: scale(1.1);
 	border-radius: 0;
 	cursor: pointer;

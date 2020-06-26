@@ -23,7 +23,7 @@ window.onload = async function () {
 		let readMore = document.createElement("span");
 		readMore.className = "read_more";
 		let readBtn = document.createElement("a");
-		readBtn.href = "review.html"; //TODO
+		readBtn.href = "review/"+filmeData[i].id; 
 		readBtn.innerText = "Citeste in continuare →";
 		readMore.appendChild(readBtn);
 		desc.appendChild(readMore);

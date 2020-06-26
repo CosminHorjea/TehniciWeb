@@ -7,9 +7,12 @@ window.onload = async () => {
 	for (let i = 0; i < filmeData.filme.length; i++) {
 		console.log(filmeData.filme[i]);
 		let poster = document.createElement("img");
+		let link = document.createElement('a');
+		link.href='review/'+filmeData.filme[i].id;
 		poster.src = filmeData.filme[i].poster;
+		link.appendChild(poster)
 		console.log(poster);
-		sliderContainer.appendChild(poster);
+		sliderContainer.appendChild(link);
 	}
 
 	let latestsContainer = document.getElementById("review_list");
@@ -27,7 +30,7 @@ window.onload = async () => {
 		let title = document.createElement("h3");
 		title.innerText = filmeData.filme[i].titlu;
 		let desc = document.createElement("p");
-		desc.innerHTML = `${filmeData.filme[i].desc} <br /> <a href="review.html" class="read_full"
+		desc.innerHTML = `${filmeData.filme[i].desc} <br /> <a href="review/${filmeData.filme[i].id}" class="read_full"
 		>Citeste tot review-ul</a
 	> <br/>`;
 		let nota = document.createElement("span");
@@ -42,8 +45,3 @@ window.onload = async () => {
 	}
 };
 
-// <img
-// src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg"
-// alt="Ad Astra(2019) Movie Poster"
-// title="Ad Astra (2019)"
-// />

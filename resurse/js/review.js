@@ -8,7 +8,7 @@ window.onload = async function () {
 		"Review " + filmData.titlu;
 	document.getElementsByTagName("b")[0].innerText = filmData.nota + "/10";
 	let reviewDiv = document.getElementsByClassName("text")[0];
-	reviewDiv.innerText = filmData.review;
+	reviewDiv.innerHTML = filmData.review;
 	reviewDiv.innerHTML += "<br>";
 	for (let i = 0; i < filmData.gallery.length; i++) {
 		let image = document.createElement("img");

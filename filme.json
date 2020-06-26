@@ -1,5 +1,5 @@
 {
-	"lastId": 2,
+	"lastId": 10,
 	"filme": [
 		{
 			"id": 0,
@@ -12,7 +12,7 @@
 			"desc": "In 1931 Paris, an orphan living in the walls of a train station gets wrapped up in a mystery involving his late father and an automaton.",
 			"review": "Hugo is an orphan boy living in the walls of a train station in 1930s Paris. He learned to fix clocks and other gadgets from his father and uncle which he puts to use keeping the train station clocks running. The only thing that he has left that connects him to his dead father is an automaton (mechanical man) that doesn't work without a special key. Hugo needs to find the key to unlock the secret he believes it contains. On his adventures, he meets George Melies, a shopkeeper, who works in the train station, and his adventure-seeking god-daughter. Hugo finds that they have a surprising connection to his father and the automaton, and he discovers it unlocks some memories the old man has buried inside regarding his past.",
 			"actori": "Asa Butterfield, Chloë Grace Moretz, Christopher Lee",
-			"is_PG": true,
+			"is_PG": false,
 			"trailer": "https://www.youtube.com/embed/Hv3obL9HqyY",
 			"gallery": [
 				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/jlh5bNiSPcbQ79Nt31kE2GxIR3h.jpg",
@@ -29,13 +29,159 @@
 			"desc": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
 			"review": "First of all it's a masterpiece, it's shows how the higher class actually judge the lower class people. At it looks like a normal story of a family who all are struggling hard to live, but their life gets changed when all four of them one by one get employed in park's house. After sometime we also got to see the frustration and anger of Kim family on park family because they were judged by them.their were no unnecessarily plot twist in the film which led the film very smoothly. All over it's a must watch film.",
 			"actori": "Song Kang-Ho, Lee Sun-Kyun",
-			"is_PG": false,
+			"is_PG": true,
 			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
 			"trailer": "https://www.youtube.com/embed/5xH0HfJHsaY",
 			"gallery": [
 				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
 				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/8K001T1pcEDQSOYwEI1wKps1qcA.jpg"
 			]
+		},
+		{
+			"id": 2,
+			"titlu": "Ford v Ferrari",
+			"an_aparitie": "2019",
+			"regizor": "James Mangold",
+			"imdb_id": "tt1950186",
+			"nota": "9.00",
+			"desc": "American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order to defeat Ferrari at the 24 Hours of Le Mans in 1966.",
+			"review": "In 2015, a long-gestating project was announced as entering pre-production – based on Brock Yates's 1991 book Enzo Ferrari: The Man, the Cars, the Races, the film was tentatively called Enzo Ferrari and was to be written, produced, and directed by Michael Mann (Heat; The Insider; Ali). A long-time racing fan, Mann had been trying to bring Ferrari's story to the screen since the book was published (in 1992 it was reported that Robert De Niro was circling the role and Mann would begin shooting right after he completed work on The Last of the Mohicans), but in 2015, things seemed to finally be moving ahead. Christian Bale was cast as Ferrari and Noomi Rapace as his mistress, Lina Lardi. And then, nothing. Time passed and no more was heard until 2017, when it was announced that Bale had dropped out and been replaced by Hugh Jackman. And again, nothing. In the meantime, a different film was greenlighted – an adaptation of A.J. Baime's 2009 book, Go Like Hell: Ford, Ferrari, and Their Battle for Speed and Glory at Le Mans. Set to star Tom Cruise and Brad Pitt, it was to be written by Jason Keller (Machine Gun Preacher; Mirror Mirror; Escape Plan) and directed by Joseph Kosinski (Tron: Legacy; Oblivion; Only the Brave). That version of the project never got off the ground, but in 2018, it was announced that James Mangold (Cop Land; Girl, Interrupted; Logan) had signed on as director, working from a new version of Keller's script, written by Jez Butterworth and John-Henry Butterworth (Fair Game; Edge of Tomorrow; Get On Up). Rather confusingly, none other than Christian Bale is in the cast, although not as Ferrari, whilst Mann himself is credited as an executive producer. Is this (at least in part) the remnants of his own film? Is his credit related to nothing more than rights, or was he actively involved in making the movie? Will we still see his Enzo Ferrari at some point?",
+			"actori": "Christian Bale, Matt Damon",
+			"is_PG": false,
+			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/6ApDtO7xaWAfPqfi2IARXIzj8QS.jpg",
+			"trailer": "https://www.youtube.com/embed/zyYgDtY2AMY",
+			"gallery": [
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/n3UanIvmnBlH531pykuzNs4LbH6.jpg",
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/gX3w0Nniv2XNYZepdKMx4fBvouK.jpg"
+			]
+		},
+		{
+			"id": 3,
+			"titlu": "The Gentleman",
+			"an_aparitie": "2019",
+			"regizor": "Guy Ritchie",
+			"imdb_id": "tt8367814",
+			"nota": "8.7",
+			"desc": "American expat Mickey Pearson has built a highly profitable marijuana empire in London. When word gets out that he’s looking to cash out of the business forever it triggers plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
+			"review": "The Gentlemen is a return to the London gangster milieu where writer/director Guy Ritchie first made his name with films such as Lock, Stock and Two Smoking Barrels (1998) and snatch. (2000). His first foray into this territory since the disappointing RocknRolla (2008), The Gentlemen comes at the end of over a decade making big-budget studio-backed crimes against cinema such as Sherlock Holmes (2009), Sherlock Holmes: A Game of Shadows (2011), The Man from U.N.C.L.E. (2015), King Arthur: Legend of the Sword (2017), and Aladdin (2019). Granted, the film seems stuck in the last decade in more ways than one, it's highly questionable that the only gay character is a slimy man-whore into S&M, its token female character barely even manages to rise to the level of tokenism, and Ritchie does absolutely nothing new here – if you've seen Lock, Stock or snatch., you'll know pretty much exactly what to expect – but The Gentlemen is still hugely entertaining. Most of the jokes land, the dialogue is as sharp and expletive-laden as ever, the cast are having a ball, and the self-reflexivity, although a little forced in places, works well for the most part. And yes, the plot is as derivative as it gets, but there's no denying Ritchie has injected real verve into what looks on paper like an inconsequential C-movie. The Gentlemen definitely won't change your life, but it will make you laugh.",
+			"actori": "Matthew McConaughey, Charlie Hunnam",
+			"is_PG": true,
+			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/jtrhTYB7xSrJxR1vusu99nvnZ1g.jpg",
+			"trailer": "https://www.youtube.com/embed/2B0RpUGss2c",
+			"gallery": [
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/tintsaQ0WLzZsTMkTiqtMB3rfc8.jpg",
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/9Qfawg9WT3cSbBXQgDRuWbYS9lj.jpg"
+			]
+		},
+		{
+			"id": 4,
+			"titlu": "Knives Out",
+			"an_aparitie": "2019",
+			"regizor": "Rian Johnson",
+			"imdb_id": "tt8946378",
+			"nota": "7.9",
+			"desc": "When renowned crime novelist Harlan Thrombey is found dead at his estate just after his 85th birthday, the inquisitive and debonair Detective Benoit Blanc is mysteriously enlisted to investigate. From Harlan's dysfunctional family to his devoted staff, Blanc sifts through a web of red herrings and self-serving lies to uncover the truth behind Harlan's untimely death.",
+			"review": "Knives Out has been shown in numerous festivals, and it received massive acclaim in literally every single one of them. Therefore, its hype grew more and more until its wide release date. Before the film, I can’t deny that I was indeed affected by the whole a whodunnit like you haven’t seen in years. I went into the theater with high expectations, not only due to the festival praise but due to its jaw-dropping cast. It’s uncommon to possess such a renowned ensemble and deliver a “bad” movie, especially when Rian Johnson is writing and directing it (yes, I like The Last Jedi, and even if I didn’t, he did other stuff, you know?). It’s one of those films everyone knows it’s going to be appreciated by a considerable part of the world.<br>Even the genre itself is a very welcome type of cinema entertainment in regards to both critics and the general public. So, does it live up to its hype, or it fails to reach such high expectations? Knives Out is one of the best movies of the year, as well as one of the best mystery-suspense stories of the millennium (everyone is doing the whole “best X of the decade,” I’m going one step beyond). This is a film I know I’m going to rewatch countless times throughout the next years. Usually, when it comes to whodunnits, people are misled into thinking that from the moment they know who “did it,” the movie loses its interest. This is rarely true, and Rian Johnson succeeds because he doesn’t need the ultimate reveal to deliver a great story.",
+			"actori": "Daniel Craig, Chris Evans",
+			"is_PG": false,
+			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+			"trailer": "https://www.youtube.com/embed/qGqiHJTsRkQ",
+			"gallery": [
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/AbRYlvwAKHs0YuyNO6NX9ofq4l6.jpg",
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/tAOHi8ZezKuYA8rhoy0irmLKdwa.jpg"
+			]
+		},
+		{
+			"id": 5,
+			"titlu": "Avengers: Infinity War",
+			"an_aparitie": "2018",
+			"regizor": "Joe Russo",
+			"imdb_id": "tt4154756",
+			"nota": "8.5",
+			"desc": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+			"review": "Infinity War does a brilliant job by seamlessly combining the last few films together. It picks up where Ragnarok left off on the space shuttle with Thor, Loki, Hulk and all the remaining Asgardians. It opens with a distress call as Thanos and his Dark Order have slaughtered most of passengers including some of the remaining Asgardians. He interrogates Thor and beats Hulk so bad he is too scared to ever turn green again. A defeated Hulk/Bruce Banner is then transported to Doctor Strange's Sanctum Sanctorum so he can warn him of Thanos' arrival. It is down to Doctor Strange, Wong, Tony Stark and Spider Man to prevent Thanos' evil minions from destroying New York and taking the time stone. It's a thrilling action sequence that introduces Starks cool new nano-bot armour that creates its own swords and shields.<br>Thanos has been teased since 2012 and the wait has paid off here as he is by far one of the best villains. The story is more about him achieving his goals which is refreshing to see as the villains are normally sidelined in these films. He is so determined to get all six gems, each gem making him stronger. The Avengers and Guardians have to race against time to stop him from finding all six. One sequence on his home planet 'Titan' is worth mentioning and like most of the film, it is breathtaking and tense. His crew (Dark Order) also seem unbeatable as they battle the rest of the Avengers in Wakanda with their alien army which also proves difficult. Thanos gets some interesting backstory, it would have been even better if the menacing Dark Order got some backstory themselves as we never really understand them or their motivations.",
+			"actori": "Robert Downey Jr., Chris Hemsworth",
+			"is_PG": false,
+			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+			"trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
+			"gallery": [
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/lmZFxXgJE3vgrciwuDib0N8CfQo.jpg",
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/uwUyqV23JAdTkR3lOGdCZ6NP9wg.jpg"
+			]
+		},
+		{
+			"id": 6,
+			"titlu": "Joker",
+			"an_aparitie": "2019",
+			"regizor": "Todd Phillips",
+			"imdb_id": "tt7286456",
+			"nota": "9.7",
+			"desc": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+			"review": "Joker. The character that has existed since 1940, has become so heavy with so many different portrayals, different origins, that it feels impossible for any mortal man alive to impersonate the scattered personalities. It is an insurmountable task for any director to digest it all and still produce one more<br>Todd Phillips had a crazy challenge. He brought in one of the best actors alive to lift it with him, Joaquin Phoenix. Together, they have built a mass-market masterpiece which is just above the crop. It is appropriately crazy and completely focussed on the central character. The narrator goes close to the shores of that craziness, wets his feet but remains dry to tell this story. It is like those news reporters which go closer to the burning amazon, but it is impossible to step in the fumes. In no way, Joker is telling his story. Instead, his story is told to us and there are pillars of sanity (like the detectives, asylum clerk etc.) which remain steadfast to give a strong anchor to the audience. This dilutes the effect of the film.<br>With the copious amount of material on Joker already, I wished to consider this film as a standalone character study vaguely inspired by the batman universe. But this is not entirely possible. I was forced to think about it on two levels. With Batman and Without Batman.<br>With Batman, The Joker is on the home turf. There have been many renditions of Joker, and Heath Ledger's portrayal is still vivid in my mind. I knew that Arthur here will go on to become someone who is going to say, “‎Introduce a little anarchy. Upset the established order, and everything becomes chaos. I'm an agent of chaos...”. When I was thinking Joker in the context of Batman, I could not keep Ledger's joker too far away. I was searching for a path for Arthur to go from the mentally unstable to the calculating anarchist. I was left searching for that path when the movie ended. To remain as the crown prince of crime, and to justify the title of the greatest adversary of Batman, just mental instability isn't good enough. He needs to be much more intelligent, much more cunning. These traits are often visible early, In the case of Arthur, I could not find that complete foundation upon which the later psyche can stand. This reminded me of Cameron Monaghan's Jerome Valeska. The joker of my understanding is somewhere between the cruelty of Jerome and pitiable delusions of Arthur. Also, the iconic Batman moment was not needed in this. I kept feeling that Joker is trying to stand with the support of Batman's tale as a clutch. A safety net enforced by the producers.",
+			"actori": "Joaquin Phoenix, Robert De Niro, Zazie Beetz",
+			"is_PG": true,
+			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+			"trailer": "https://www.youtube.com/embed/t433PEQGErc",
+			"gallery": [
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg",
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/qR1yyZe3X14opqBmeHRLXmfVcot.jpg"
+			]
+		},
+		{
+			"id": 7,
+			"titlu": "1917",
+			"an_aparitie": "2019",
+			"regizor": "Sam Mendes",
+			"imdb_id": "tt8579674",
+			"nota": "8",
+			"desc": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers.",
+			"review": "The Great War broke men in ways the likes of which had never been seen before, and perhaps have never been seen since. It exposed men to psychological horrors inconceivable to most people today. The nature of trench warfare and the concomitant use of artillery on a scale beyond anything in human history did such things to men's minds that even thousands of those who returned never really left the battlefields. We've all seen 'Shell shocked soldier, 1916', one of the most haunting photographs ever taken, and the picture it paints is a disturbingly vivid one. But what makes the Great War, the so-called 'war to end all wars', so much worse than it had to be was that it pitted old school tactics against modern weaponry. Generals on both sides believed the war could be won, as others had been, by sending wave after wave of men 'over the top' in an attempt to overwhelm enemy positions. However, such tactics failed to take into account advancements in weaponry, with combatants defending their trenches with miles of machine-gun emplacements and fields of landmines, reinforced with the war's most successful killer – endless artillery barrages. The technology had advanced. The tactics had not. Which led to the nine-month stalemate of the Battle of Verdun (February 21 to December 18, 1916), during which the Germans lost 143,000 men and the French lost 163,000. Which led to the first day of the Somme (July 1, 1916), when the British suffered nearly 20,000 loses in less than 12 hours. Which led to the unimaginable slaughter of the hell-come-to-Earth that was the Third Battle of Ypres, better known today as Passchendaele (July 31 to November 10, 1917), where at least 400,000 men died, maybe as many as twice that.<br>Every soul who fought in those battles is gone now. The last surviving combat veteran, Chief Petty Officer Claude Choules, who joined the Royal Navy in 1915, aged just 14, died at the age of 110 in 2011. And unlike conflicts such as World War II or Vietnam, The Great War has largely dropped from the popular consciousness. Not just the reasons why it was fought, but the conditions in which it was fought. Even celebrated films such as Lewis Milestone's All Quiet on the Western Front (1930) or Stanley Kubrick's Paths of Glory (1957) aren't all that well known. And that's one of the reasons that films like 1917 are important – they ensure we don't forget.",
+			"actori": "",
+			"is_PG": true,
+			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+			"trailer": "https://www.youtube.com/embed/UcmZN0Mbl04",
+			"gallery": [
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/cqa3sa4c4jevgnEJwq3CMF8UfTG.jpg",
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/tJgmraUAmVlJPlq72yC76tKDyC4.jpg"
+			]
+		},
+		{
+			"id":8,
+			"titlu": "Onward ",
+			"an_aparitie": "2020",
+			"regizor": "Dan Scanlon",
+			"imdb_id": "tt7146812",
+			"nota": "7.5",
+			"desc": "In a suburban fantasy world, two teenage elf brothers embark on an extraordinary quest to discover if there is still a little magic left out there.",
+			"review": "Unicorns, pixies, elves, and wizards have lost the magic of the past in “Onward,” a formulaic animated adventure from Pixar. Set in a suburban world of fantasy, the film tells the story of two teenage brothers who embark on a quest to find a magic gem that could hold the key to a little familial enchantment.<br>Ian (Tom Holland) and his older brother Barley (Chris Pratt) are still mourning the death of their father several years ago. Ian was just a baby when he died, and Barley barely has any memories of his dad. When mom (Julia Louis-Dreyfus) gives Ian a gift that his departed pop left for his 16th birthday, it turns out to be a wizard’s staff with instructions for a visitation spell that can bring the patriarch back for one day only. Something goes wrong, and the two siblings must set out on a danger-filled journey to find the missing piece of the puzzle before the sun sets.<br>Onscreen adventures are supposed to be exciting, but this one is considerably dull. The story feels very personal yet unfortunately sanitized for broader audience appeal. It works best when the story leans on the theme of reconnecting with your family, especially as the two brothers use their road trip as a way to bond over their differing ways of dealing with grief and regret. It’s poignant, and the film’s sincerity is a heartwarming reminder that we shouldn’t waste what precious time we have left.<br>The movie has a weird “Weekend at Bernie’s” vibe as the two teens drive around in a rock n’ roll van with the bottom half of their reanimated dad in tow. It’s not very funny, and the heavy themes of loss and the meaning of family will likely resonate with those who’ve lost a loved one and still yearn for one more day. It’s a strange film with and unsatisfying ending that doesn’t really pay off.<br>“Onward” doesn’t make the most of its solid premise, which is a real shame. The plot is repetitive and predictable; the story sentimental and drawn out. It’s one of the weakest films in the Pixar catalog, but it does meet the studio’s basic checklist for acceptable quality (great animation, good voice performances, mediocre story). It could benefit from a little extra sprinkling of magic.",
+			"actori": "Tom Holland, Chris Pratt",
+			"is_PG": false,
+			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg",
+			"trailer": "https://www.youtube.com/embed/gn5QmllRCn4",
+			"gallery": [
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/dW6yBuKwiMeronJZw8kozYLMorB.jpg",
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/xFxk4vnirOtUxpOEWgA1MCRfy6J.jpg"
+			]
+		},
+		{
+			"id": 9,
+			"titlu": "Harry Potter and the Sorcerer's Stone",
+			"an_aparitie": "2001",
+			"regizor": "Chris Columbus",
+			"imdb_id": "tt0241527",
+			"nota": "7.8",
+			"desc": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths -- and about the villain who's to blame.",
+			"review": "Ahh, the magic begins.<br>Harry Potter is an Orphan who on his eleventh birthday discovers he's a wizard and is called to term at Hogwarts School. But Harry is soon to find out that his past, and his destiny, is a truly remarkable, magical, and terrifying thing.<br>Harry Potter And The Philosopher's Stone arrived in a blaze of publicity, one of the most hyped and talked about motion pictures of the decade had finally arrived. The box office was guaranteed to bulge based on fandom book base alone, regardless of if the film got bad word of mouth or not, it was destined to be a monster smash hit. To someone like me who to this day has never read any of the Harry Potter books, it was easy for me to view objectively without comparison to the source - I enjoyed it immensely upon theatre release, and I still enjoy it equally as much now.<br>Director Christopher Columbus, I believe has wisely stayed loyal to the source material, and thus pleased the literature masses. Yet not all newcomers to the party were that taken by the magic on show, that's a little baffling to me because the budget explodes from the screen at every turn. Oliver Twist like sets form the marvellous Diagon Alley, dream like smoke cloaks the splendid Hogwarts Express, the school itself is a monolithic delight nestling in among eerie mountains - and what about the exhilarating introduction of Quidditch? Pulsating and frantic with no amount of devilment to keep us intrigued throughout.<br>The characters are all perfectly formed in the first two thirds of the film, here Columbus pulls off a masterstroke by interjecting the character arcs with dashes of wonder so that we the audience never gets bored. The final reel plays out solidly as per the mysterious 'who done it' core of the piece, but it's down to the previous work in the film that we actually care come the finale. Some great casting of the adults really helps to make the film triumph, with Maggie Smith, Robbie Coltrane (one of the best casting jobs of the decade I would say), Richard Harris, Alan Rickman and Zoe Wanamaker all doing excellent work here. The kids are all newcomers that overnight were to become household names, all fresh faced and wet behind the ears, Daniel Radcliffe, Emma Watson, Rupert Grint & Tom Felton are a delight to watch, and they all help to keep the feeling of charm constantly glowing up on the screen.<br>Owls here, witches there, what's that strange three headed dog doing over there? The Harry Potter franchise begins with a bang and a whip of the wand, and I and gazillions of others personally love it. ",
+			"actori": "Daniel Radcliffe, Rupert Grint, Emma Watson",
+			"is_PG": false,
+			"poster": "https://image.tmdb.org/t/p/w185_and_h278_bestv2/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+			"trailer": "https://www.youtube.com/embed/PbdM1db3JbY",
+			"gallery": [
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/hziiv14OpD73u9gAak4XDDfBKa2.jpg",
+				"https://image.tmdb.org/t/p/w533_and_h300_bestv2/lvOLivVeX3DVVcwfVkxKf0R22D8.jpg"
+			]
 		}
+		
 	]
 }
+
