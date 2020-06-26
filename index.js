@@ -35,7 +35,8 @@ app.get("/filme/:id", (req, res) => {
 	res.send(filme);
 });
 app.get("/review/:id", (req, res) => {
-	res.render("html/review", { movieId: req.params.id });
+	let user = getUsername(req);
+	res.render("html/review", { movieId: req.params.id, username: user });
 });
 app.get("/favicon.ico", function (req, res) {});
 app.get("/*", (req, res) => {

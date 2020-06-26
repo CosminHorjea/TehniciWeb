@@ -5,6 +5,7 @@ let filmData;
 let checkPG;
 let yearValue;
 let typeOfSort;
+let timeOutID = 0;
 window.onload = async function () {
 	let filme = await fetch("/filme");
 	filmData = await filme.json();
@@ -12,7 +13,7 @@ window.onload = async function () {
 	movieCards = document.getElementById("movie_cards");
 	searchBox = document.getElementById("searchInput");
 	searchBox.oninput = (e) => {
-		// filterByName(filmData, searchBox.value);
+		window.localStorage.setItem("searchTerm", searchBox.value);
 		applyFilters();
 	};
 	checkPG = document.getElementById("isPGcheck");
@@ -27,12 +28,13 @@ window.onload = async function () {
 	typeOfSort.onchange = (e) => {
 		applyFilters();
 	};
+	checkForLocalStorage();
 	renderData(filmData);
+	applyFilters();
 };
 
 function renderData(data) {
 	movieCards.innerHTML = "";
-	console.log(data);
 	for (let i = 0; i < data.length; i++) {
 		let textTemplate = ejs.render(
 			"<div class='card'>\
@@ -76,11 +78,41 @@ function sortByMark(data, type) {
 		}
 	});
 }
+function calculateAvgRating(data) {
+	let total = data.reduce((acc, e) => acc + parseFloat(e.nota), 0);
+	document.getElementById("avgRating").innerText = (
+		total / data.length
+	).toFixed(2);
+}
 function applyFilters() {
+	if (timeOutID) {
+		clearTimeout(timeOutID);
+		timeOutID = 0;
+	}
+	timeOutID = setTimeout(resetFilters, 1000 * 60 * 2);
+
 	let toShow = filmData;
 	toShow = filterByName(toShow, searchBox.value);
 	toShow = filterPG(toShow, checkPG.checked);
 	toShow = filterYear(toShow, yearValue.value);
 	toShow = sortByMark(toShow, typeOfSort.value);
 	renderData(toShow);
+	calculateAvgRating(toShow);
+}
+
+function checkForLocalStorage() {
+	let searchString = window.localStorage.getItem("searchTerm");
+	if (searchString) {
+		searchBox.value = searchString;
+	}
+}
+
+function resetFilters() {
+	searchBox.value = "";
+	checkPG.checked = false;
+	yearValue.value = "all";
+	typeOfSort = "asc";
+	applyFilters();
+	clearInterval(timeOutID);
+	alert("Nu ati mai efectuat o cautare de doua minite, filtrele s-au resetat");
 }
