@@ -26,7 +26,7 @@ app.get("/filme", (req, res) => {
 	res.send(JSON.parse(filme));
 });
 app.get("/filme/:id", (req, res) => {
-	console.log(req.params);
+	// console.log(req.params);
 	let filme = fs.readFileSync("filme.json");
 	filme = JSON.parse(filme).filme;
 	filme = filme.filter((f) => {
@@ -34,6 +34,20 @@ app.get("/filme/:id", (req, res) => {
 	});
 	res.send(filme);
 });
+app.get("/comentarii", (req, res) => {
+	let comments = fs.readFileSync("comentarii.json");
+	// res.setHeader("Content-Type", "application/json");
+	res.send(JSON.parse(comments));
+});
+
+app.get("/comentarii/:id", (req, res) => {
+	let comments = fs.readFileSync("comentarii.json");
+	comments = JSON.parse(comments).comments;
+	comments = comments.filter((c) => c.movieId == req.params.id);
+	// console.log(comments);
+	res.send(comments);
+});
+
 app.get("/review/:id", (req, res) => {
 	let user = getUsername(req);
 	res.render("html/review", { movieId: req.params.id, username: user });
@@ -64,7 +78,7 @@ app.post("/inreg", (req, res) => {
 			parola: hashedPassword,
 			filme_pref: fields.favorite_movies,
 			email: fields.email,
-			favoriteGenre:fields.genuri_filme,
+			favoriteGenre: fields.genuri_filme,
 			dataInreg: new Date(),
 			rol: "user",
 		};
@@ -92,7 +106,57 @@ app.post("/login", function (req, res) {
 		}
 	});
 });
+app.post("/comentarii", (req, res) => {
+	// console.log(req.body);
+	fisierComentarii = fs.readFileSync("comentarii.json");
+	obComentarii = JSON.parse(fisierComentarii);
+	let newComm = req.body;
+	newComm.upvotes = 0;
+	newComm.downvotes = 0;
+	newComm.id = obComentarii.lastID;
+	obComentarii.lastID++;
+	obComentarii.comments.push(newComm);
 
+	var jsonNou = JSON.stringify(obComentarii);
+	fs.writeFileSync("comentarii.json", jsonNou);
+
+	// console.log(`Updated entry: ${JSON.stringify(req.body)}`);
+	res.send(newComm);
+});
+app.post("/upvote/:id", (req, res) => {
+	fisierComentarii = fs.readFileSync("comentarii.json");
+	obComentarii = JSON.parse(fisierComentarii);
+	console.log(obComentarii);
+	new_comm = obComentarii.comments.filter((e) => e.id == req.params.id)[0];
+	new_comm.upvotes = new_comm.upvotes + 1;
+	// console.log("-------------");
+	// console.log(new_comm);
+	obComentarii.comments = obComentarii.comments.filter(
+		(e) => e.id != req.params.id
+	);
+	obComentarii.comments.push(new_comm);
+	// console.log(obComentarii);
+
+	var jsonNou = JSON.stringify(obComentarii);
+	fs.writeFileSync("comentarii.json", jsonNou);
+});
+app.post("/downvote/:id", (req, res) => {
+	fisierComentarii = fs.readFileSync("comentarii.json");
+	obComentarii = JSON.parse(fisierComentarii);
+	// console.log(obComentarii);
+	new_comm = obComentarii.comments.filter((e) => e.id == req.params.id)[0];
+	new_comm.downvotes = new_comm.downvotes + 1;
+	// console.log("-------------");
+	// console.log(new_comm);
+	obComentarii.comments = obComentarii.comments.filter(
+		(e) => e.id != req.params.id
+	);
+	obComentarii.comments.push(new_comm);
+	// console.log(obComentarii);
+
+	var jsonNou = JSON.stringify(obComentarii);
+	fs.writeFileSync("comentarii.json", jsonNou);
+});
 app.listen(8080);
 console.log("Aplicatia se va deschide pe portul 8080.");
 

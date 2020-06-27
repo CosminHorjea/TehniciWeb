@@ -1,11 +1,1 @@
-{
-	"lastID": 1,
-	"comments": [
-		{
-			"id": 0,
-			"moviId": 1,
-			"username": "test",
-			"desc": "Very good movie"
-		}
-	]
-}
+{"lastID":12,"comments":[{"id":2,"movieId":3,"username":"test","desc":"Very good movie","upvotes":1,"downvotes":3},{"id":3,"movieId":1,"username":"test","desc":"Very good movie2","upvotes":1,"downvotes":3},{"id":4,"movieId":1,"username":"3213","desc":"312312","upvotes":1,"downvotes":3},{"id":5,"movieId":1,"username":"Ionel","desc":"Ionel are mere","upvotes":1,"downvotes":3},{"id":6,"movieId":1,"username":"ionel","desc":"ionel","upvotes":1,"downvotes":3},{"id":7,"movieId":1,"username":"ionel","desc":"ionel","upvotes":1,"downvotes":3},{"id":8,"movieId":2,"username":"test","desc":"testing this","upvotes":4,"downvotes":7},{"id":1,"movieId":2,"username":"test","desc":"Very good movie","upvotes":4,"downvotes":3},{"id":9,"movieId":2,"username":"ionel","desc":"testing this","upvotes":8,"downvotes":3},{"id":0,"movieId":1,"username":"test","desc":"Very good movie","upvotes":2,"downvotes":3},{"id":10,"movieId":2,"username":"Corolo","desc":"12345","upvotes":2},{"id":11,"movieId":2,"username":"Corolo","desc":"COMM 2","upvotes":2,"downvotes":0}]}

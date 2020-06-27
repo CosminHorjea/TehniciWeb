@@ -72,6 +72,10 @@ section:nth-child(2) > article > h3 {
 	/* color: var(--text-primary) */
 	color: #fff;
 }
+.text_area_comment> #name_input{
+	background-color: hsl(210, 55%, 13%);
+	color: #fff;
+}
 
 .comments img {
 	fill: white;

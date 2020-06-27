@@ -20,7 +20,7 @@
 
 		<main>
 			<section>
-				<h2>Ford v Ferrari</h2>
+				<h2>Titlu</h2>
 				<article>
 					<img
 						src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/6ApDtO7xaWAfPqfi2IARXIzj8QS.jpg"
@@ -29,6 +29,8 @@
 					<div class="desc">
 						<h3>Ford v. Ferrari</h3>
 						<b>9.5/10</b>
+						<span id="actors">Actori:</span><br />
+						<span id="isPG">Este PG:</span>
 						<div class="text">
 							<p>
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
@@ -137,82 +139,49 @@
 				</article>
 			</section>
 			<section>
+				<h2>Alte filme</h2>
+				<div id="container_otherMovies"></div>
+			</section>
+			<section>
 				<h2>Comentarii</h2>
+
 				<article>
 					<h3>Scrieti un comentariu</h3>
-					<form action="/" class="text_area_comment">
+					<form
+						action="/comentarii"
+						class="text_area_comment"
+						id="commentForm"
+						method="POST"
+					>
+						<% if (locals.username){ %>
+						<input
+							type="text"
+							name="username"
+							id="name_input"
+							placeholder="Numele"
+							required
+						/>
+						<br /><br />
 						<textarea
 							name="textarea_comment"
 							id="comment_area"
 							placeholder="Scrie un comentariu..."
+							required
 						></textarea>
 						<br />
 						<button>Comenteaza</button>
+						<% } %>
 					</form>
 				</article>
+
 				<br />
-				<ul class="comments">
-					<li>
-						<article>
-							<img
-								src="../imgs/user.svg"
-								alt="user_default"
-								height="32"
-								width="32"
-							/>
-
-							<h4>Username</h4>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Deserunt, quia? Nostrum, praesentium est dolorum atque
-								consequuntur debitis animi perferendis corporis porro quidem
-								veritatis rerum placeat in quisquam repudiandae sunt nemo.
-							</p>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img
-								src="../imgs/user.svg"
-								alt="user_default"
-								height="32"
-								width="32"
-							/>
-
-							<h4>Jaime</h4>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Deserunt, quia? Nostrum, praesentium est dolorum atque
-								consequuntur debitis animi perferendis corporis porro quidem
-								veritatis rerum placeat in quisquam repudiandae sunt nemo. Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-								quia? Nostrum, praesentium est dolorum atque consequuntur
-								debitis animi perferendis corporis porro quidem veritatis rerum
-								placeat in quisquam repudiandae sunt nemo.
-							</p>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img
-								src="../imgs/user.svg"
-								alt="user_default"
-								height="32"
-								width="32"
-							/>
-
-							<h4>John Doe</h4>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Deserunt, quia? Nostrum, praesentium est dolorum atque
-								consequuntur debitis animi perferendis corporis porro quidem
-								veritatis rerum placeat in quisquam repudiandae sunt nemo.
-							</p>
-						</article>
-					</li>
-				</ul>
+				<button onclick="toggleComments()" id="toggleBtn">
+					Ascunde comentarii
+				</button>
+				<ul class="comments" id="comments_area"></ul>
 			</section>
 		</main>
+
 		<%- include("../fragmente/footer") %>
 
 		<script src="../js/script.js"></script>
