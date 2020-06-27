@@ -1,0 +1,80 @@
+{
+	"intrebari": [
+		{
+			"intrebare": "Care este intentia regizorului cand filmeaza un 'cadru de stabilire' ",
+			"raspunsuri": [
+				["Sa cuprinda toate personajele intr-un singur cadru", false],
+				[
+					"Pentru a oferi publicului o hartă mentală a locurilor în care actorii și recuzita sunt poziționate într-o scenă unul față de celălalt",
+					false
+				],
+				[
+					"Pentru a oferi spectatorilor contextul geografic și de fundal la deschiderea unei scene, adesea fără personaje incluse.",
+					true
+				]
+			]
+		},
+		{
+			"intrebare": "Ce include un 'cadru mediu'? ",
+			"raspunsuri": [
+				[
+					"O încadrare strânsă și parțială a subiectului, fie actor, fie obiect",
+					true
+				],
+				[
+					"O încadrare completă a întregului subiect, cu puțin sau fără fundal",
+					false
+				],
+				["Un mare peisaj cu unghi larg", false]
+			]
+		},
+		{
+			"intrebare": "Incadrarea în sus sau în jos pe un subiect este folosită de cinematografi pentru a obține ce efect perceptiv?",
+			"raspunsuri": [
+				[
+					"Statura / Autoritatea. Incadrarea în sus face ca subiectul să pară mai autoritar și invers.",
+					true
+				],
+				["Frica si nelinistea", false],
+				[
+					"Pentru a sublinia culoarea părului și trăsăturile faciale ale actorului",
+					false
+				]
+			]
+		},
+		{
+			"intrebare": "Cum se ocupă camerele de smartphone-uri standard de focalizare?",
+			"raspunsuri": [
+				[
+					"Camerele de smartphone-uri se focalizeaza pe obiectul centrat pe ecran sau pe un obiect din cadru pe care utilizatorul îl atinge manual.",
+					true
+				],
+				[
+					"Nivelul luminii ambientale și înălțimea soarelui determină calitatea focalizării camerei smartphone-ului",
+					false
+				],
+				[
+					"Camerele de smartphone-uri sunt întotdeauna focalizate; sunt capodopere inginerești fără cusur",
+					false
+				]
+			]
+		},
+		{
+			"intrebare": "Care este principalul beneficiu al utilizării unei aplicații third-party pentru camera foto pe smartphone?",
+			"raspunsuri": [
+				[
+					"Aplicațiile third-party pentru camerele vă permit adesea să reglați și să blocați focalizarea manuală, spre deosebire de aplicația generică pentru camere.",
+					true
+				],
+				[
+					"Aplicațiile third-party recalibrează adesea deschiderea camerei smartphone-ului pentru a crește calitatea rezoluției imaginii",
+					false
+				],
+				[
+					"Au filtre achiziționabile „cu densitate neutră” care reduc luminozitatea fără a modifica ISO-ul lentilelor smartphone-ului",
+					false
+				]
+			]
+		}
+	]
+}

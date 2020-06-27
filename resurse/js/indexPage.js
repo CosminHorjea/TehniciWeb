@@ -1,5 +1,4 @@
 window.onload = async () => {
-	//TODO separat in alte functii
 	let sliderContainer = document.getElementById("slider_postere");
 	let filme = await fetch("/filme");
 	let filmeData = await filme.json();
@@ -7,10 +6,10 @@ window.onload = async () => {
 	for (let i = 0; i < filmeData.filme.length; i++) {
 		console.log(filmeData.filme[i]);
 		let poster = document.createElement("img");
-		let link = document.createElement('a');
-		link.href='review/'+filmeData.filme[i].id;
+		let link = document.createElement("a");
+		link.href = "review/" + filmeData.filme[i].id;
 		poster.src = filmeData.filme[i].poster;
-		link.appendChild(poster)
+		link.appendChild(poster);
 		console.log(poster);
 		sliderContainer.appendChild(link);
 	}
@@ -44,4 +43,3 @@ window.onload = async () => {
 		latestsContainer.appendChild(listItem);
 	}
 };
-

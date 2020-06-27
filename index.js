@@ -52,6 +52,10 @@ app.get("/review/:id", (req, res) => {
 	let user = getUsername(req);
 	res.render("html/review", { movieId: req.params.id, username: user });
 });
+app.get("/intrebariQuiz", (req, res) => {
+	let intrebari = fs.readFileSync("quiz.json");
+	res.send(JSON.parse(intrebari));
+});
 app.get("/favicon.ico", function (req, res) {});
 app.get("/*", (req, res) => {
 	console.log(req.url);
