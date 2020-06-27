@@ -28,15 +28,14 @@ window.onload = async function () {
 	typeOfSort.onchange = (e) => {
 		applyFilters();
 	};
-	document.getElementById('search').onsubmit = (e)=>{
+	document.getElementById("search").onsubmit = (e) => {
 		searchBox.value = "";
 		checkPG.checked = false;
 		yearValue.value = "all";
-		typeOfSort = "asc";
+		typeOfSort.value = "asc";
 		applyFilters();
-		e.preventDefault()
-		console.log('hut')
-	}
+		e.preventDefault();
+	};
 	checkForLocalStorage();
 	renderData(filmData);
 	applyFilters();
@@ -120,8 +119,8 @@ function resetFilters() {
 	searchBox.value = "";
 	checkPG.checked = false;
 	yearValue.value = "all";
-	typeOfSort = "asc";
+	typeOfSort.value = "asc";
 	applyFilters();
-	clearInterval(timeOutID);
-	alert("Nu ati mai efectuat o cautare de doua minite, filtrele s-au resetat")
+	clearTimeout(timeOutID);
+	alert("Nu ati mai efectuat o cautare de doua minite, filtrele s-au resetat");
 }
